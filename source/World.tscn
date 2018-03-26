@@ -1,0 +1,681 @@
+[gd_scene load_steps=123 format=2]
+
+[ext_resource path="res://Scripts/Civilian.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/HypemanGameReady/CivilianReg/CivilianREG001/SprCivilianReg001Stand.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/HypemanGameReady/CivilianReg/CivilianREG001/SprCivilianReg001Happy.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/CoolCivilian.gd" type="Script" id=4]
+[ext_resource path="res://Sprites/HypemanGameReady/CivilianCool/CivilianCool002/SprCivilian002Stand.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/HypemanGameReady/CivilianCool/CivilianCool002/SprCivilian002Happy.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/HypemanGameReady/CivilianCool/CivilianCool003/SprCivilianCool003Stand.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/HypemanGameReady/CivilianCool/CivilianCool003/SprCivilianCool003Happy.png" type="Texture" id=8]
+[ext_resource path="res://Scripts/HypemanKinematic.gd" type="Script" id=9]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveUp/SprPlayerMoveUp001.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveUp/SprPlayerMoveUp002.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveUp/SprPlayerMoveUp003.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveUp/SprPlayerMoveUp004.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveUp/SprPlayerMoveUp005.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveUp/SprPlayerMoveUp006.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveUp/SprPlayerMoveUp007.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveUp/SprPlayerMoveUp008.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveUp/SprPlayerMoveUp009.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveUp/SprPlayerMoveUp010.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveRight/SprPlayerMoveRight001.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveRight/SprPlayerMoveRight002.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveRight/SprPlayerMoveRight003.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveRight/SprPlayerMoveRight004.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveRight/SprPlayerMoveRight005.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveRight/SprPlayerMoveRight006.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveRight/SprPlayerMoveRight007.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveRight/SprPlayerMoveRight008.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveRight/SprPlayerMoveRight009.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveRight/SprPlayerMoveRight010.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_Stand/SprPlayerStandLeft.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveLeft/SprPlayerMoveLeft001.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveLeft/SprPlayerMoveLeft002.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveLeft/SprPlayerMoveLeft003.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveLeft/SprPlayerMoveLeft004.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveLeft/SprPlayerMoveLeft005.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveLeft/SprPlayerMoveLeft006.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveLeft/SprPlayerMoveLeft007.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveLeft/SprPlayerMoveLeft008.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveLeft/SprPlayerMoveLeft009.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveLeft/SprPlayerMoveLeft010.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveDown/SprPlayerMoveDown001.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveDown/SprPlayerMoveDown002.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveDown/SprPlayerMoveDown003.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveDown/SprPlayerMoveDown004.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveDown/SprPlayerMoveDown005.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveDown/SprPlayerMoveDown006.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveDown/SprPlayerMoveDown007.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveDown/SprPlayerMoveDown008.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveDown/SprPlayerMoveDown009.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_MoveDown/SprPlayerMoveDown010.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_Stand/SprPlayerStandDown.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_HiFive/SprPlayerHiFiveRight.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_HiFive/SprPlayerHiFiveLeft.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_Stand/SprPlayerStandUp.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_Stand/SprPlayerStandRight.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_HiFive/SprPlayerHiFiveUp.png" type="Texture" id=56]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=57]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_Stand/SprDragStandidle.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveLeft/SprDragMoveLeft001.png" type="Texture" id=59]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveLeft/SprDragMoveLeft002.png" type="Texture" id=60]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveLeft/SprDragMoveLeft003.png" type="Texture" id=61]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveLeft/SprDragMoveLeft004.png" type="Texture" id=62]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveLeft/SprDragMoveLeft005.png" type="Texture" id=63]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveLeft/SprDragMoveLeft006.png" type="Texture" id=64]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveLeft/SprDragMoveLeft007.png" type="Texture" id=65]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveLeft/SprDragMoveLeft008.png" type="Texture" id=66]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveLeft/SprDragMoveLeft009.png" type="Texture" id=67]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveLeft/SprDragMoveLeft010.png" type="Texture" id=68]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveRight/SprDragMoveRight001.png" type="Texture" id=69]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveRight/SprDragMoveRight002.png" type="Texture" id=70]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveRight/SprDragMoveRight003.png" type="Texture" id=71]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveRight/SprDragMoveRight004.png" type="Texture" id=72]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveRight/SprDragMoveRight005.png" type="Texture" id=73]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveRight/SprDragMoveRight006.png" type="Texture" id=74]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveRight/SprDragMoveRight007.png" type="Texture" id=75]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveRight/SprDragMoveRight008.png" type="Texture" id=76]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveRight/SprDragMoveRight009.png" type="Texture" id=77]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveRight/SprDragMoveRight010.png" type="Texture" id=78]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveDown/SprDragMoveDown001.png" type="Texture" id=79]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveDown/SprDragMoveDown002.png" type="Texture" id=80]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveDown/SprDragMoveDown003.png" type="Texture" id=81]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveDown/SprDragMoveDown004.png" type="Texture" id=82]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveDown/SprDragMoveDown005.png" type="Texture" id=83]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveDown/SprDragMoveDown006.png" type="Texture" id=84]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveDown/SprDragMoveDown007.png" type="Texture" id=85]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveDown/SprDragMoveDown008.png" type="Texture" id=86]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveDown/SprDragMoveDown009.png" type="Texture" id=87]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveDown/SprDragMoveDown010.png" type="Texture" id=88]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveUp/SprDragMoveUp001.png" type="Texture" id=89]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveUp/SprDragMoveUp002.png" type="Texture" id=90]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveUp/SprDragMoveUp003.png" type="Texture" id=91]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveUp/SprDragMoveUp004.png" type="Texture" id=92]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveUp/SprDragMoveUp005.png" type="Texture" id=93]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveUp/SprDragMoveUp006.png" type="Texture" id=94]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveUp/SprDragMoveUp007.png" type="Texture" id=95]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveUp/SprDragMoveUp008.png" type="Texture" id=96]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveUp/SprDragMoveUp009.png" type="Texture" id=97]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveUp/SprDragMoveUp010.png" type="Texture" id=98]
+[ext_resource path="res://Downer.gd" type="Script" id=99]
+[ext_resource path="res://Sprites/HypemanGameReady/Downer_MoveDown/SprDownerMoveDown003.png" type="Texture" id=100]
+[ext_resource path="res://Sprites/HypemanGameReady/Downer_MoveDown/SprDownerMoveDown004.png" type="Texture" id=101]
+[ext_resource path="res://Sprites/HypemanGameReady/Downer_MoveDown/SprDownerMoveDown005.png" type="Texture" id=102]
+[ext_resource path="res://Sprites/HypemanGameReady/Downer_MoveDown/SprDownerMoveDown008.png" type="Texture" id=103]
+[ext_resource path="res://Sprites/HypemanGameReady/Downer_MoveDown/SprDownerMoveDown009.png" type="Texture" id=104]
+[ext_resource path="res://Sprites/HypemanGameReady/Downer_MoveDown/SprDownerMoveDown0010.png" type="Texture" id=105]
+[ext_resource path="res://Downer-Arrow.png" type="Texture" id=106]
+[ext_resource path="res://BG0.png" type="Texture" id=107]
+[ext_resource path="res://Hype Man Sounds/Battle_Theme_A.ogg" type="AudioStream" id=108]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 13.4996, 15.3262 )
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Hyped",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 4.76443, 4.71135 )
+
+[sub_resource type="SpriteFrames" id=4]
+
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Hyped",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+
+animations = [ {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "Hyped",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 24, 24 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 52, 56 )
+
+[sub_resource type="SpriteFrames" id=8]
+
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "moveUp",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "moveRight",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 30 ) ],
+"loop": true,
+"name": "standLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ) ],
+"loop": true,
+"name": "moveLeft",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "moveDown",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 51 ) ],
+"loop": true,
+"name": "standDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 52 ) ],
+"loop": true,
+"name": "hiFiveRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ) ],
+"loop": true,
+"name": "hiFiveDown",
+"speed": 40.0
+}, {
+"frames": [ ExtResource( 53 ) ],
+"loop": true,
+"name": "hiFiveLeft",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 54 ) ],
+"loop": true,
+"name": "standUp",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 55 ) ],
+"loop": true,
+"name": "standRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 56 ) ],
+"loop": true,
+"name": "hiFiveUp",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=9]
+
+custom_solver_bias = 0.0
+extents = Vector2( 12, 12 )
+
+[sub_resource type="RectangleShape2D" id=10]
+
+custom_solver_bias = 0.0
+extents = Vector2( 36.8291, 40.6996 )
+
+[sub_resource type="SpriteFrames" id=11]
+
+animations = [ {
+"frames": [ ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ) ],
+"loop": true,
+"name": "Left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ) ],
+"loop": true,
+"name": "Right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ) ],
+"loop": true,
+"name": "Down",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ) ],
+"loop": true,
+"name": "Up",
+"speed": 15.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=12]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16, 18 )
+
+[sub_resource type="SpriteFrames" id=13]
+
+animations = [ {
+"frames": [ ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="ParticlesMaterial" id=14]
+
+render_priority = 0
+trail_divisor = 1
+emission_shape = 1
+emission_sphere_radius = 18.0
+flag_align_y = false
+flag_rotate_y = false
+flag_disable_z = true
+spread = 45.0
+flatness = 0.0
+gravity = Vector3( 0, 50, 0 )
+initial_velocity = 1.0
+initial_velocity_random = 0.0
+angular_velocity = 0.0
+angular_velocity_random = 0.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 0.0
+linear_accel_random = 0.0
+radial_accel = 0.0
+radial_accel_random = 0.0
+tangential_accel = 0.0
+tangential_accel_random = 0.0
+damping = 0.0
+damping_random = 0.0
+angle = 0.0
+angle_random = 0.0
+scale = 1.0
+scale_random = 0.0
+color = Color( 1, 1, 1, 1 )
+hue_variation = 0.0
+hue_variation_random = 0.0
+anim_speed = 0.0
+anim_speed_random = 0.0
+anim_offset = 0.0
+anim_offset_random = 0.0
+anim_loop = false
+_sections_unfolded = [ "Emission Shape", "Gravity", "Spread", "Trail" ]
+
+[node name="Coolsvile" type="Node2D" index="0"]
+
+_sections_unfolded = [ "Material" ]
+
+[node name="Civis" type="Node2D" parent="." index="0"]
+
+[node name="Civilian" type="Area2D" parent="Civis" index="0"]
+
+position = Vector2( 194.027, 417.005 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Civis/Civilian" index="0"]
+
+position = Vector2( 0.56958, 0 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Civis/Civilian" index="1"]
+
+frames = SubResource( 2 )
+animation = "default"
+playing = true
+
+[node name="Civilian2" type="Area2D" parent="Civis" index="1"]
+
+position = Vector2( 194.027, 417.005 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Civis/Civilian2" index="0"]
+
+position = Vector2( 0.56958, 0 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Civis/Civilian2" index="1"]
+
+position = Vector2( 435.006, -180.501 )
+frames = SubResource( 2 )
+animation = "default"
+playing = true
+
+[node name="CoolCivilian" type="Area2D" parent="Civis" index="2"]
+
+position = Vector2( 205.949, 75.4514 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Civis/CoolCivilian" index="0"]
+
+position = Vector2( -0.777679, -4.53197 )
+scale = Vector2( 3.1954, 3.1954 )
+shape = SubResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Civis/CoolCivilian" index="1"]
+
+frames = SubResource( 4 )
+animation = "default"
+playing = true
+
+[node name="CoolCivilian3" type="Area2D" parent="Civis" index="3"]
+
+position = Vector2( 205.949, 75.4514 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Civis/CoolCivilian3" index="0"]
+
+position = Vector2( -0.777679, -4.53197 )
+scale = Vector2( 3.1954, 3.1954 )
+shape = SubResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Civis/CoolCivilian3" index="1"]
+
+position = Vector2( 286.996, 291.508 )
+frames = SubResource( 4 )
+animation = "default"
+playing = true
+
+[node name="CoolCivilian2" type="Area2D" parent="Civis" index="4"]
+
+position = Vector2( 732.425, 400.756 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Civis/CoolCivilian2" index="0"]
+
+position = Vector2( -0.777679, -4.53197 )
+scale = Vector2( 3.1954, 3.1954 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Civis/CoolCivilian2" index="1"]
+
+frames = SubResource( 5 )
+animation = "default"
+playing = true
+
+[node name="CoolCivilian4" type="Area2D" parent="Civis" index="5"]
+
+position = Vector2( 732.425, 400.756 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Civis/CoolCivilian4" index="0"]
+
+position = Vector2( -0.777679, -4.53197 )
+scale = Vector2( 3.1954, 3.1954 )
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Civis/CoolCivilian4" index="1"]
+
+position = Vector2( -18.05, -293.313 )
+frames = SubResource( 5 )
+animation = "default"
+playing = true
+
+[node name="Hypeman2" type="KinematicBody2D" parent="." index="1"]
+
+position = Vector2( 396, 231 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 9 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Collision" type="CollisionShape2D" parent="Hypeman2" index="0"]
+
+position = Vector2( -3.82392, 0.0451385 )
+scale = Vector2( 0.267827, 0.267827 )
+shape = SubResource( 6 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Hypeman" type="Area2D" parent="Hypeman2" index="1"]
+
+position = Vector2( -3.9585, 0.293701 )
+scale = Vector2( 0.267827, 0.267827 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hypeman2/Hypeman" index="0"]
+
+position = Vector2( 0.593567, -1.3302 )
+shape = SubResource( 7 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Hypeman2" index="2"]
+
+frames = SubResource( 8 )
+animation = "standLeft"
+playing = true
+
+[node name="Drag" type="KinematicBody2D" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 981, 80 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 57 )
+_sections_unfolded = [ "Collision", "Transform", "collision" ]
+
+[node name="Sprite" type="Sprite" parent="Drag" index="0"]
+
+texture = ExtResource( 58 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape2D" parent="Drag" index="1"]
+
+position = Vector2( 0.357361, -0.0281067 )
+shape = SubResource( 9 )
+
+[node name="DragArea" type="Area2D" parent="Drag" index="2"]
+
+position = Vector2( 0.822693, -0.43084 )
+scale = Vector2( 0.355905, 0.355905 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Drag/DragArea" index="0"]
+
+shape = SubResource( 10 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Drag" index="3"]
+
+frames = SubResource( 11 )
+animation = "Down"
+frame = 2
+playing = true
+
+[node name="Downer" type="Area2D" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 85.4015, 70.3073 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 99 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Downer" index="0"]
+
+shape = SubResource( 12 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Downer" index="1"]
+
+frames = SubResource( 13 )
+animation = "default"
+frame = 3
+playing = true
+
+[node name="Particles2D" type="Particles2D" parent="Downer" index="2"]
+
+emitting = true
+amount = 2
+lifetime = 0.5
+one_shot = false
+preprocess = 0.0
+speed_scale = 0.75
+explosiveness = 0.0
+randomness = 0.0
+fixed_fps = 0
+fract_delta = true
+visibility_rect = Rect2( -100, -100, 200, 200 )
+local_coords = true
+draw_order = 0
+process_material = SubResource( 14 )
+texture = ExtResource( 106 )
+normal_map = null
+h_frames = 1
+v_frames = 1
+_sections_unfolded = [ "Drawing", "Process Material", "Textures", "Time" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="." index="4"]
+
+position = Vector2( 0.269379, 9.65817 )
+z_index = -3
+texture = ExtResource( 107 )
+offset = Vector2( 512, 308 )
+_sections_unfolded = [ "Material", "Offset", "Visibility", "Z Index" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="5"]
+
+stream = ExtResource( 108 )
+volume_db = 0.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+[connection signal="area_entered" from="Civis/Civilian" to="Civis/Civilian" method="_on_Civilian_area_entered"]
+
+[connection signal="area_exited" from="Civis/Civilian" to="Civis/Civilian" method="_on_Civilian_area_exited"]
+
+[connection signal="area_entered" from="Civis/Civilian2" to="Civis/Civilian2" method="_on_Civilian_area_entered"]
+
+[connection signal="area_exited" from="Civis/Civilian2" to="Civis/Civilian2" method="_on_Civilian_area_exited"]
+
+[connection signal="area_entered" from="Civis/CoolCivilian" to="Civis/CoolCivilian" method="_on_CoolCivilian_area_entered"]
+
+[connection signal="area_exited" from="Civis/CoolCivilian" to="Civis/CoolCivilian" method="_on_CoolCivilian_area_exited"]
+
+[connection signal="area_entered" from="Civis/CoolCivilian3" to="Civis/CoolCivilian3" method="_on_CoolCivilian_area_entered"]
+
+[connection signal="area_exited" from="Civis/CoolCivilian3" to="Civis/CoolCivilian3" method="_on_CoolCivilian_area_exited"]
+
+[connection signal="area_entered" from="Civis/CoolCivilian2" to="Civis/CoolCivilian2" method="_on_CoolCivilian_area_entered"]
+
+[connection signal="area_exited" from="Civis/CoolCivilian2" to="Civis/CoolCivilian2" method="_on_CoolCivilian_area_exited"]
+
+[connection signal="area_entered" from="Civis/CoolCivilian4" to="Civis/CoolCivilian4" method="_on_CoolCivilian_area_entered"]
+
+[connection signal="area_exited" from="Civis/CoolCivilian4" to="Civis/CoolCivilian4" method="_on_CoolCivilian_area_exited"]
+
+[connection signal="area_entered" from="Hypeman2/Hypeman" to="Civis/Civilian" method="_on_Hypeman_area_entered"]
+
+[connection signal="area_entered" from="Hypeman2/Hypeman" to="Drag" method="_on_Hypeman_area_entered"]
+
+[connection signal="area_entered" from="Hypeman2/Hypeman" to="Civis/CoolCivilian" method="_on_Hypeman_area_entered"]
+
+[connection signal="area_entered" from="Drag/DragArea" to="Hypeman2" method="_on_DragArea_area_entered"]
+
+[connection signal="area_entered" from="Downer" to="Hypeman2" method="_on_Downer_area_entered"]
+
+

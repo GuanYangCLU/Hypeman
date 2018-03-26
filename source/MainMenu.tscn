@@ -1,0 +1,499 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Hypemanbackground.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/HypemanGameReady/Downer_MoveDown/SprDownerMoveDown003.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/HypemanGameReady/Drag_MoveDown/SprDragMoveDown003.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/HypemanGameReady/Player_Stand/SprPlayerStandDown.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/HypemanGameReady/CivilianReg/CivilianREG001/SprCivilianReg001Happy.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/HypemanGameReady/CivilianCool/CivilianCool002/SprCivilian002Happy.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/HypemanGameReady/CivilianCool/CivilianCool003/SprCivilianCool003Happy.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/HypemanGameReady/GGJ00-RoundLogo-900x900.png" type="Texture" id=9]
+[ext_resource path="res://Hype Man Sounds/Menu.wav" type="AudioStream" id=10]
+
+[node name="MainMenu" type="Node2D"]
+
+script = ExtResource( 1 )
+
+[node name="BG" type="Sprite" parent="." index="0"]
+
+position = Vector2( 511.968, 300.797 )
+texture = ExtResource( 2 )
+
+[node name="Play" type="TextEdit" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 443.0
+margin_top = 132.0
+margin_right = 598.0
+margin_bottom = 184.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/member_variable_color = Color( 0, 0, 0, 1 )
+text = "		Play Game
+(Press Action Button)"
+readonly = true
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+_sections_unfolded = [ "Size Flags", "Theme", "Visibility", "custom_colors" ]
+
+[node name="drag" type="TextEdit" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 776.0
+margin_top = 209.0
+margin_right = 883.0
+margin_bottom = 235.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/member_variable_color = Color( 0, 0, 0, 1 )
+text = "Drag"
+readonly = true
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+_sections_unfolded = [ "Size Flags", "Theme", "Visibility", "custom_colors" ]
+
+[node name="downer" type="TextEdit" parent="." index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 772.0
+margin_top = 124.0
+margin_right = 879.0
+margin_bottom = 150.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/member_variable_color = Color( 0, 0, 0, 1 )
+text = "The Downer"
+readonly = true
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+_sections_unfolded = [ "Size Flags", "Theme", "Visibility", "custom_colors" ]
+
+[node name="hypeman" type="TextEdit" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 777.0
+margin_top = 45.0
+margin_right = 884.0
+margin_bottom = 71.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/member_variable_color = Color( 0, 0, 0, 1 )
+text = "HypeMan"
+readonly = true
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+_sections_unfolded = [ "Size Flags", "Theme", "Visibility", "custom_colors" ]
+
+[node name="civilians" type="TextEdit" parent="." index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 776.0
+margin_top = 307.0
+margin_right = 883.0
+margin_bottom = 333.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/member_variable_color = Color( 0, 0, 0, 1 )
+text = "Civilians"
+readonly = true
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+_sections_unfolded = [ "Size Flags", "Theme", "Visibility", "custom_colors" ]
+
+[node name="About" type="TextEdit" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 238.0
+margin_top = 403.0
+margin_right = 789.0
+margin_bottom = 595.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+text = "Hype man must defeat the downer by building up his HYPE!!!
+Run around and give civilians High Fives to transmit their Hype Power to you!!!
+Keep away from The Downers minion, Drag, or He'll drag down your hype!!!
+The more Hype you have, the faster Hypeman Gets!!!
+Keep Building Hype until you can defeat The Downer!!!
+You need Hype from at least 3 Civilians to defeat the Downer with a high five!!!!!!!!!
+
+GET HYPED!!!!!!
+"
+readonly = true
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+
+[node name="Title" type="TextEdit" parent="." index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 424.0
+margin_top = 39.0
+margin_right = 622.0
+margin_bottom = 94.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+text = "HYPE MAN!"
+readonly = false
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+
+[node name="DirectionControls" type="TextEdit" parent="." index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 38.0
+margin_top = 358.0
+margin_right = 194.0
+margin_bottom = 491.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+text = "CONTROLS:
+
+W/Dpad Up = Up
+A/Dpad Left= Left
+S/Dpad Down= Down
+D/Dpad Right= right 
+
+
+"
+readonly = false
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+
+[node name="Credits" type="TextEdit" parent="." index="9"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 10.0
+margin_top = 35.0
+margin_right = 382.0
+margin_bottom = 347.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+text = "Credits:
+SLACKER TEAM
+Dillon Craft---- Lead Designer, Programmer.
+Christopher Little---- Resarcher, Programmer
+Michael Little---- Tileset Mod for BG
+David Aseraf ---- Sprite Artist
+Guan Yang ---- Audio
+Sabian Howard---- Additional Design
+
+Original tileset for background by Kenney
+(www.kenney.nl)
+Music and sound from opengameart.org
+GGJ logo from globalgamejam.org
+
+We have never made a game or used this engine
+before. This game should not be considered a
+reliable indication of the capabilities of Godot Engine 3."
+readonly = false
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+
+[node name="ActionButton" type="TextEdit" parent="." index="10"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 38.0
+margin_top = 503.0
+margin_right = 194.0
+margin_bottom = 583.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+text = "Action Button:
+SpaceBar ~ PC
+X ~ Playstation Controller
+A ~ Xbox Controller
+
+
+
+"
+readonly = false
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+
+[node name="Exitgame" type="TextEdit" parent="." index="11"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 422.0
+margin_top = 233.0
+margin_right = 624.0
+margin_bottom = 363.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+text = "Close Game
+Press Escape button, 
+Circle Button [Playstation/Gamepad]
+or 
+B Button [Xbox/gamepad]"
+readonly = false
+highlight_current_line = false
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+override_selected_font_color = false
+context_menu_enabled = true
+smooth_scrolling = false
+v_scroll_speed = 80.0
+hiding_enabled = 0
+wrap_lines = false
+caret_block_mode = false
+caret_blink = false
+caret_blink_speed = 0.65
+caret_moving_by_right_click = true
+
+[node name="Downer" type="Sprite" parent="." index="12"]
+
+position = Vector2( 934.885, 157.004 )
+scale = Vector2( 1.68709, 1.68709 )
+texture = ExtResource( 3 )
+
+[node name="Drag" type="Sprite" parent="." index="13"]
+
+position = Vector2( 930.414, 241.717 )
+scale = Vector2( 2.08448, 2.08448 )
+texture = ExtResource( 4 )
+
+[node name="Hypeman" type="Sprite" parent="." index="14"]
+
+position = Vector2( 934.926, 78.3637 )
+scale = Vector2( 2.14089, 2.14089 )
+texture = ExtResource( 5 )
+
+[node name="Civilian1" type="Sprite" parent="." index="15"]
+
+position = Vector2( 930.865, 325.198 )
+scale = Vector2( 1.66143, 1.66143 )
+texture = ExtResource( 6 )
+
+[node name="Civilian2" type="Sprite" parent="." index="16"]
+
+position = Vector2( 906.949, 374.385 )
+scale = Vector2( 1.57682, 1.57682 )
+texture = ExtResource( 7 )
+
+[node name="Civilian3" type="Sprite" parent="." index="17"]
+
+position = Vector2( 962.452, 375.738 )
+scale = Vector2( 1.54862, 1.54862 )
+texture = ExtResource( 8 )
+
+[node name="GGJ00-RoundLogo-900x900" type="Sprite" parent="." index="18"]
+
+position = Vector2( 934.394, 529.246 )
+scale = Vector2( 0.103902, 0.103902 )
+texture = ExtResource( 9 )
+
+[node name="Timer" type="Timer" parent="." index="19"]
+
+process_mode = 0
+wait_time = 0.25
+one_shot = true
+autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="20"]
+
+stream = ExtResource( 10 )
+volume_db = 0.0
+autoplay = true
+mix_target = 0
+bus = "Music"
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+
