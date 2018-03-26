@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Battle_Theme_A.ogg-2cb6139445cbbdedfbd181ca0845bfd5.oggstr"
+
+[deps]
+
+source_file="res://Hype Man Sounds/Battle_Theme_A.ogg"
+source_md5="280b7f42c70fb2415b52f530dc606c83"
+
+dest_files=[ "res://.import/Battle_Theme_A.ogg-2cb6139445cbbdedfbd181ca0845bfd5.oggstr" ]
+dest_md5="3192581b583a24f5fb65bdcd95700520"
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Menu.wav-a42503b2839d5cd38fa456beb5e2f944.sample"
+
+[deps]
+
+source_file="res://Hype Man Sounds/Menu.wav"
+source_md5="619f16710f925eeeeed923fee73f44a2"
+
+dest_files=[ "res://.import/Menu.wav-a42503b2839d5cd38fa456beb5e2f944.sample" ]
+dest_md5="a57b57636b0b2e36a3a4d120f676d94e"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0

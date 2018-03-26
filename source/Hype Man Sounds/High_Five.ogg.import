@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/High_Five.ogg-f0a03bc2fbdcaabe7d4cebf465b57498.oggstr"
+
+[deps]
+
+source_file="res://Hype Man Sounds/High_Five.ogg"
+source_md5="bb8c63c3d988973905364561487459d1"
+
+dest_files=[ "res://.import/High_Five.ogg-f0a03bc2fbdcaabe7d4cebf465b57498.oggstr" ]
+dest_md5="9ae152af5a05ced1c7c2d1cd7d2e0552"
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Dragging.ogg-7f4f09f6935bfd7e1a2ff7c6708eb898.oggstr"
+
+[deps]
+
+source_file="res://Hype Man Sounds/Dragging.ogg"
+source_md5="f93fa0c34f012df90f6a5de08fbd00d3"
+
+dest_files=[ "res://.import/Dragging.ogg-7f4f09f6935bfd7e1a2ff7c6708eb898.oggstr" ]
+dest_md5="64f4d09b32787ce52ca53ea6f915081f"
+
+[params]
+
+loop=true
+loop_offset=0
